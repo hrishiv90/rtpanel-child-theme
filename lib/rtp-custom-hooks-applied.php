@@ -66,6 +66,10 @@ add_action( 'init', 'rtp_remove_parent_hooks' );
   * @since rtPanelChild 1.0
   */
 function rtp_custom_scripts_and_styles() {
+    /* Dequeue rtPanel Styles and Scripts */
+    //wp_dequeue_style('rtp-google-font');
+    //wp_dequeue_style('rtp-font-awesome');
+    //wp_dequeue_script('rtp-jquery-sidr');
 
     /* Uncomment the following lines if using the jQuery Cycle2 Plugin for the slider. */
     //wp_enqueue_script( 'jquery-cycle', RTP_CHILD_JS . '/jquery.cycle2.min.js', array( 'jquery' ), '', true );

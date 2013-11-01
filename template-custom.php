@@ -8,9 +8,11 @@
  *
  * @since rtPanelChild 2.0
  */
-get_header(); ?>
+get_header();
 
-    <section id="content" role="main" class="rtp-grid-8 rtp-custom-page">
+    $rtp_content_grid_class = apply_filters( 'rtp_set_content_grid_class', 'large-8 columns' ); ?>
+
+    <section id="content" role="main" class="rtp-custom-page <?php echo $rtp_content_grid_class; ?>">
         <?php rtp_hook_begin_content(); ?>
         
         <?php
